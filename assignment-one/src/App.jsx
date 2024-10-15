@@ -1,17 +1,12 @@
 import React from 'react'
 import './App.css'
-import { Button } from './components/common/button'
-import { Container } from './components/common/container'
+import Navbar from './components/Dashboard/Navbar'
 
 function App() {
 
   return (
     <main className='font-honest'>
-      <Container>
-        <Button>
-          <p>Cypher AI</p>
-        </Button>
-      </Container>
+      <Navbar />
     </main>
   )
 }
