@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../common/hero'
 
 function Locations() {
   return (
-    <div>Locations</div>
+    <>
+        <Hero direction="Home - Locations" itemName="Locations" sort="Sort By: Date modified" plus="+" btnText="New Location" />
+    </>
   )
 }
 

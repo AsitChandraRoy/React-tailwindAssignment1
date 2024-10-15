@@ -1,14 +1,16 @@
 import React from 'react'
-import { Button } from '../common/button'
-import { Container } from '../common/container'
+import Hero from '../common/hero'
+// import { Button } from '../common/button'
+// import { Container } from '../common/container'
 
 function Home() {
   return (
     <>
-    <Container className="h-24">
+    <Hero direction="Welcome back" itemName="Dashboard" sort="Sort By: Date modified" btnText="Cypher AI" />
+    {/* <Container className="h-24">
         <div className='flex justify-between items-center px-5
              sm:px-7 md:px-10 xl:px-12 pt-5'>
-            <div className=''>
+            <div id='1'>
                 <p className='text-lowLight text-[10px] md:text-xs'>Welcome back</p>
                 <h1 className='font-bold  md:text-xl xl:text-2xl'>Dashboard</h1>
             </div>
@@ -21,7 +23,7 @@ function Home() {
                 <Button>Cypher AI</Button>
             </div>
         </div>
-    </Container>
+    </Container> */}
     </>
   )
 }

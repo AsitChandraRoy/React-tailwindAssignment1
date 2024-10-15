@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../common/hero'
 
 function Incidents() {
   return (
-    <div>incidents</div>
+    <>
+          <Hero direction="Home - Incidents" itemName="Incidents" sort="Sort By: Date modified" plus="+" btnText="New Incident" />
+    </>
   )
 }
 

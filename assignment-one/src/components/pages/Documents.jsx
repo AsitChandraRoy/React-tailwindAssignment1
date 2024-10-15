@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../common/hero'
 
 function Documents() {
   return (
-    <div>Documents</div>
+    <>
+          <Hero direction="Home - Documents" itemName="Documents" sort="Sort By: Date modified" plus="+" btnText="New Document" />
+    </>
   )
 }
 

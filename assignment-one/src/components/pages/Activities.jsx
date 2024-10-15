@@ -1,10 +1,11 @@
 import React from 'react'
+import Hero from '../common/hero'
 
 function Activities() {
   return (
-    <div>
-      <h1 className=''>Activities</h1>
-    </div>
+    <>
+          <Hero direction="Home - Activities" itemName="Activities" sort="Sort By: Date modified" plus="+" btnText="New Activity" />
+    </>
   )
 }
 
