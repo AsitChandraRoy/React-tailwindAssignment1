@@ -6,8 +6,8 @@ function Hero(props) {
   return (
     <>
     <Container className="md:h-24 sm:h-28 h-32">
-        <div className='flex justify-between items-center px-5
-             sm:px-7 md:px-10 xl:px-12 pt-5'>
+        <div className='flex justify-between items-center px-1
+             sm:px-7 md:px-10 xl:px-12 pt-5 gap-3'>
             <div>
                 <p className='text-lowLight text-[10px] md:text-xs'>{props.direction}</p>
                 <h1 className='font-bold  md:text-xl xl:text-2xl'>{props.itemName}</h1>

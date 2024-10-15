@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         "honest": ['"Onest"', 'sans-serif'],
+        "footC": ['"Bebas Neue"', 'sans-serif']
       },
     },
   },

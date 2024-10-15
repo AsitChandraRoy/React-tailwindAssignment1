@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 
 export const ToggleMenu = ({toggleMenu}) => {
   return (
-    <div className="lg:hidden absolute top-0 left-0 w-full h-screen bg-card z-50 overflow-y-auto p-6">
+    <div className="lg:hidden absolute top-0 left-0 right-0 w-full h-[30vh] bg-card z-50 overflow-y-auto p-6">
       <div className="flex justify-between items-center pb-6">
       <img className='w-32' src="/logo.png" alt="" />
 

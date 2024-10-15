@@ -27,14 +27,14 @@ function Navbar() {
                 <div>
                     <ul className='hidden md:flex justify-center items-center gap-2 md:gap-4 lg:gap-7 xl:gap-8 text-xs md:text-sm xl:text-base'>
                         {navItems.map(({text, link}, i)=>(
-                            <li key={i} className=' opacity-50'><NavLink to={link}>{text}</NavLink></li>
+                            <li key={i} className='text-lowLight'><NavLink to={link}>{text}</NavLink></li>
                         ))}
                     </ul>
                 </div>
                 <div className='flex justify-between items-center gap-2 text-xs md:text-sm xl:text-base'>
                 {/* Hamburger button for mobile */}
                     <button
-                    className="lg:hidden block text-accent"
+                    className="md:hidden block text-accent"
                     onClick={toggleMenu}
                     aria-label="Toggle Menu"
                     >
