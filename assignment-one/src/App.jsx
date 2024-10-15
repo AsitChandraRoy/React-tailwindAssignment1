@@ -7,6 +7,7 @@ import Locations from './components/pages/Locations'
 import Activities from './components/pages/Activities'
 import Documents from './components/pages/Documents'
 import CypherAI from './components/pages/CypherAI'
+import Home from './components/pages/Home'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <BrowserRouter>
       <Routes>
           <Route path='' element={<Navbar />} >
-            <Route path='/' element={<Incidents /> } />
+            <Route path='/' element={<Home /> } />
+            <Route path='/Incidents' element={<Incidents /> } />
             <Route path='Locations' element={<Locations /> } />
             <Route path='Activities' element={<Activities /> } />
             <Route path='Documents' element={<Documents /> } />

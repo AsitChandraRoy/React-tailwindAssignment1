@@ -4,17 +4,19 @@ import { NavLink, Outlet } from 'react-router-dom'
 function Navbar() {
   return (
     <>
-        <Container className="bg-card">
-            <nav className='flex justify-around items-center pb-3 border border-b-2 border-[#cbcbd9]'>
+      <section  className="bg-card">
+        <Container>
+            <nav className='flex justify-between items-center pb-3 px-5
+             sm:px-7 md:px-10 xl:px-12 border-b-2 border-[#cbcbd9]'>
                 <img className='h-5 md:h-7 xl:h-9' src="/logo.png" alt="" />
                 <div>
                     <ul className='flex justify-center items-center gap-2 md:gap-4 lg:gap-7 xl:gap-8 text-xs md:text-sm xl:text-base'>
-                        <li className='font-bold'><a href="#">Dashboard</a></li>
-                        <li className=' opacity-50'><a href="#">Incidents</a></li>
-                        <li className=' opacity-50'><a href="#">Locations</a></li>
-                        <li className=' opacity-50'><a href="#">Activities</a></li>
-                        <li className=' opacity-50'><a href="#">Documents</a></li>
-                        <li className=' opacity-50'><a href="#">Cypher AI</a></li>
+                        <li className='font-bold'><NavLink to="/">Dashboard</NavLink></li>
+                        <li className=' opacity-50'><NavLink to="/Incidents">Incidents</NavLink></li>
+                        <li className=' opacity-50'><NavLink to="/Locations">Locations</NavLink></li>
+                        <li className=' opacity-50'><NavLink to="/Activities">Activities</NavLink></li>
+                        <li className=' opacity-50'><NavLink to="/Documents">Documents</NavLink></li>
+                        <li className=' opacity-50'><NavLink to="/CypherAI">Cypher AI</NavLink></li>
                     </ul>
                 </div>
                 <div className='flex justify-between items-center gap-2 text-xs md:text-sm xl:text-base'>
@@ -29,7 +31,9 @@ function Navbar() {
                     </div>
                 </div>
             </nav>
+            <Outlet />
         </Container>
+       </section>
     </>
   )
 }

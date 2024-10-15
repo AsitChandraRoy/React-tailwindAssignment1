@@ -2,7 +2,9 @@ import React from 'react'
 
 function Activities() {
   return (
-    <div>Activities</div>
+    <div>
+      <h1 className=''>Activities</h1>
+    </div>
   )
 }
 
