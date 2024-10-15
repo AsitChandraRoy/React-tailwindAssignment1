@@ -8,6 +8,7 @@ import Activities from './components/pages/Activities'
 import Documents from './components/pages/Documents'
 import CypherAI from './components/pages/CypherAI'
 import Home from './components/pages/Home'
+import CardBody from './components/Dashboard/CardBody'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <CardBody />
     </main>
   )
 }
