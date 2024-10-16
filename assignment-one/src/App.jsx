@@ -13,6 +13,7 @@ import PopUpPage from './components/pages/PopUpPage'
 import CButton from './components/Dashboard/CButton'
 import ShowCButton from './components/Dashboard/ShowCButton'
 import NewIncident from './components/pages/NewIncident'
+import BestIncident from './components/pages/BestIncident'
 
 function App() {
 
@@ -33,7 +34,8 @@ function App() {
       {/* <CardBody /> */}
       {/* <CButton /> */}
       {/* <PopUpPage /> */}
-      <NewIncident />
+      {/* <NewIncident /> */}
+      <BestIncident />
     </main>
   )
 }
