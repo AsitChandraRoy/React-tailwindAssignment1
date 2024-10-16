@@ -9,6 +9,8 @@ import Documents from './components/pages/Documents'
 import CypherAI from './components/pages/CypherAI'
 import Home from './components/pages/Home'
 import CardBody from './components/Dashboard/CardBody'
+import PopUpPage from './components/pages/PopUpPage'
+import CButton from './components/Dashboard/CButton'
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
         </Routes>
       </BrowserRouter>
       <CardBody />
+      <CButton />
+      {/* <PopUpPage /> */}
     </main>
   )
 }
