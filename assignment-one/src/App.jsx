@@ -11,6 +11,8 @@ import Home from './components/pages/Home'
 import CardBody from './components/Dashboard/CardBody'
 import PopUpPage from './components/pages/PopUpPage'
 import CButton from './components/Dashboard/CButton'
+import ShowCButton from './components/Dashboard/ShowCButton'
+import NewIncident from './components/pages/NewIncident'
 
 function App() {
 
@@ -19,7 +21,7 @@ function App() {
       <BrowserRouter>
       <Routes>
           <Route path='' element={<Navbar />} >
-            <Route path='/' element={<Home /> } />
+            <Route path='/' element={<ShowCButton /> } />
             <Route path='/Incidents' element={<Incidents /> } />
             <Route path='Locations' element={<Locations /> } />
             <Route path='Activities' element={<Activities /> } />
@@ -28,9 +30,10 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <CardBody />
-      <CButton />
+      {/* <CardBody /> */}
+      {/* <CButton /> */}
       {/* <PopUpPage /> */}
+      <NewIncident />
     </main>
   )
 }

@@ -1,13 +1,14 @@
 import React from 'react'
 import Hero from '../common/hero'
-// import { Button } from '../common/button'
-// import { Container } from '../common/container'
+import { Button } from '../common/button'
+import { Container } from '../common/container'
+import CButton from '../Dashboard/CButton'
 
 function Home() {
   return (
     <>
-    <Hero direction="Welcome back" itemName="Dashboard" sort="Sort By: Date modified" btnText="Cypher AI" />
-    {/* <Container className="h-24">
+    {/* <Hero direction="Welcome back" itemName="Dashboard" sort="Sort By: Date modified" btnText="Cypher AI" /> */}
+    <Container className="h-24">
         <div className='flex justify-between items-center px-5
              sm:px-7 md:px-10 xl:px-12 pt-5'>
             <div id='1'>
@@ -23,7 +24,7 @@ function Home() {
                 <Button>Cypher AI</Button>
             </div>
         </div>
-    </Container> */}
+    </Container>
     </>
   )
 }

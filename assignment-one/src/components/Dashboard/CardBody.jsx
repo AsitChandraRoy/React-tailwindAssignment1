@@ -9,7 +9,7 @@ function CardBody() {
 
   return (
     <>
-      <Container className="lg:mt-1 md:mt- sm:mt-32 mt-24">
+      <Container className="lg:mt-1 md:mt- sm:mt-32 mt-24 bg-white h-full">
         <div
           className="grid grid-cols-12 gap-7 py-7 px-4
              sm:px-6 md:px-8 xl:px-10"
