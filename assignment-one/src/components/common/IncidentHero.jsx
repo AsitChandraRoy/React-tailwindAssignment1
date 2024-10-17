@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './button'
 import { Container } from './container'
 
-export default function IncidentHero() {
+export default function IncidentHero(props) {
   return (
     <>
       <Container className="md:h-24 sm:h-28 h-32 bg-[#f1f1f3] ">
@@ -33,7 +33,7 @@ export default function IncidentHero() {
             <Button className="bg-[#ffffff] text-black opacity-70 border">
               Back
             </Button>
-            <Button>Next step</Button>
+            <Button>{props.function}</Button>
           </div>
         </div>
       </Container>

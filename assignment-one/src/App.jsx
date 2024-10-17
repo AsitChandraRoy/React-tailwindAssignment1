@@ -14,6 +14,8 @@ import CButton from './components/Dashboard/CButton'
 import ShowCButton from './components/Dashboard/ShowCButton'
 import NewIncident from './components/pages/NewIncident'
 import BestIncident from './components/pages/BestIncident'
+import IncidentInput from './components/pages/IncidentInput'
+import FinalIncident from './components/pages/finalIncident'
 
 function App() {
 
@@ -35,7 +37,9 @@ function App() {
       {/* <CButton /> */}
       {/* <PopUpPage /> */}
       {/* <NewIncident /> */}
-      <BestIncident />
+      {/* <BestIncident /> */}
+      {/* <IncidentInput /> */}
+      <FinalIncident />
     </main>
   )
 }
