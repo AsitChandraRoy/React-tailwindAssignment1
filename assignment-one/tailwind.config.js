@@ -11,8 +11,8 @@ export default {
         lowLight: '#71717a',
       },
       fontFamily: {
-        "honest": ['"Onest"', 'sans-serif'],
-        "footC": ['"Bebas Neue"', 'sans-serif']
+        honest: ['"Onest"', 'sans-serif'],
+        footC: ['"Bebas Neue"', 'sans-serif']
       },
     },
   },

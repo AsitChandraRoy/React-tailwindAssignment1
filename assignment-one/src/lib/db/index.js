@@ -150,3 +150,39 @@ export const bestIncident = [
         des: "Wildfire",
     },
 ]
+
+export const LocationDetails = [
+    {
+        image: "/building1.png",
+        img: "/buildingAll.png",
+        text: "Building",
+        cardTitle: "Whitechapel Rd.",
+        address: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00",
+    },
+    {
+        image: "/building2.png",
+        img: "/buildingAll.png",
+        text: "Building",
+        cardTitle: "Whitechapel Rd.",
+        address: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00",
+    },
+    {
+        image: "/building3.png",
+        img: "/buildingAll.png",
+        text: "Building",
+        cardTitle: "Whitechapel Rd.",
+        address: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00",
+    },
+    {
+        image: "/building4.png",
+        img: "/buildingAll.png",
+        text: "Building",
+        cardTitle: "Whitechapel Rd.",
+        address: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00",
+    },
+
+]

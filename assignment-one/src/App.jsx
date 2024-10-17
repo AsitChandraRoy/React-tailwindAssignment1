@@ -16,6 +16,7 @@ import NewIncident from './components/pages/NewIncident'
 import BestIncident from './components/pages/BestIncident'
 import IncidentInput from './components/pages/IncidentInput'
 import FinalIncident from './components/pages/finalIncident'
+import NewLocation from './components/pages/Newlocation'
 
 function App() {
 
@@ -39,7 +40,8 @@ function App() {
       {/* <NewIncident /> */}
       {/* <BestIncident /> */}
       {/* <IncidentInput /> */}
-      <FinalIncident />
+      {/* <FinalIncident /> */}
+      {/* <NewLocation /> */}
     </main>
   )
 }

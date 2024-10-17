@@ -5,8 +5,8 @@ import CardBody from '../Dashboard/CardBody'
 function Incidents() {
   return (
     <>
-          {/* <Hero direction="Home - Incidents" itemName="Incidents" sort="Sort By: Date modified" plus="+" btnText="New Incident" /> */}
-          {/* <CardBody /> */}
+          <Hero direction="Home - Incidents" itemName="Incidents" sort="Sort By: Date modified" plus="+" btnText="New Incident" />
+          <CardBody />
     </>
   )
 }

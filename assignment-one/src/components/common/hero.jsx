@@ -10,7 +10,10 @@ function Hero(props) {
              sm:px-7 md:px-10 xl:px-12 pt-5 gap-3'>
             <div>
                 <p className='text-lowLight text-[10px] md:text-xs'>{props.direction}</p>
-                <h1 className='font-bold  md:text-xl xl:text-2xl'>{props.itemName}</h1>
+                <div className='flex justify-start items-center'>
+                    <img className={props.wm} src={props.tree} alt="" />
+                    <h1 className='font-bold  md:text-xl xl:text-2xl'>{props.itemName}</h1>
+                </div>
             </div>
             <div className='grid md:grid-cols-2 sm:grid-cols-1 md:w-[600px] sm:w-96 w-52 justify-end items-center text-xs gap-3 text-lowLight'>
                 <div className='flex justify-start p-2 py-1 rounded-sm bg-[#ffffff]'>
