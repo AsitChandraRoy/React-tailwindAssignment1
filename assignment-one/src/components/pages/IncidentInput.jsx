@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import IncidentHero from "../common/IncidentHero";
 import { Container } from "../common/container";
+import { Button } from "../common/button";
+import FinalIncident from "./finalIncident";
 
-export default function IncidentInput() {
+export default function IncidentInput({ Back }) {
+  const [isCreate, setIsCreate] = useState(false);
+  const create = () => setIsCreate(!isCreate);
   return (
     <>
-      <IncidentHero function="Next step" />
-      <Container>
+        {!isCreate && <IncidentHero />}
+
+        {isCreate ? < FinalIncident goBack={create} /> : (<div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
+          <button type="button" onClick={Back}>
+            <Button className="bg-[#ffffff] text-black opacity-70 border">
+              Back
+            </Button>
+          </button>
+              <button  type="button" onClick={create}>
+
+              <Button>Next step</Button>
+              </button>
+            </div>)}
+
+        {!isCreate && <Container className="mt-24">
         <div className="mx-auto w-[752px] h-auto flex flex-col justify-center items-center mt-5">
           <div>
             <h1 className="py-2 font-bold text-2xl">Let’s give the incident a title?</h1>
@@ -30,7 +47,9 @@ export default function IncidentInput() {
             ></textarea>
           </div>
         </div>
-      </Container>
+      </Container> }
+
+
     </>
   );
 }

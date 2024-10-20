@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Container } from "../common/container";
 import { cardDetails } from "../../lib/db";
-import PopUpPage from "../pages/PopUpPage";
 
 function CardBody() {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggler = () => setIsOpen(!isOpen);
 
   return (
     <>
@@ -22,12 +19,12 @@ function CardBody() {
               >
                 <div className="text-xs font-bold">
                   <div className="flex flex-row-reverse">
-                    <div className="absolute -z-10 me-3 mt-[10px] p-[10px] rounded-[40px] flex gap-1 bg-white">
+                    <div className="absolute z-10 me-3 mt-[10px] p-[10px] rounded-[40px] flex gap-1 bg-white">
                       <img src={img} alt="" />
                       <p>{text}</p>
                     </div>
                   </div>
-                  <img className="w-[700px] relative z-0" src={image} alt="" />
+                  <img className="w-[700px] relative" src={image} alt="" />
                 </div>
                 <div className="mt-1 leading-[30px]">
                   <h1 className="text-[16px] font-bold">{cardTitle}</h1>
@@ -38,15 +35,6 @@ function CardBody() {
             )
           )}
         </div>
-        {/* <div className="flex flex-row-reverse">
-          <button
-            onClick={toggler}
-            className="flex justify-center items-center rounded-full me-20 mb-24 h-[77px] w-[77px] bg-warning font-footC text-white text-[55px] opacity-90 transition-all delay-160 hover:opacity-100"
-          >
-            c
-          </button>
-        </div>
-        {isOpen && <PopUpPage toggler={toggler} />} */}
       </Container>
     </>
   );

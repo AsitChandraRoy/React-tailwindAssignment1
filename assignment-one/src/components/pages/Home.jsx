@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
     {/* <Hero direction="Welcome back" itemName="Dashboard" sort="Sort By: Date modified" btnText="Cypher AI" /> */}
-    <Container className="h-24">
+    <Container className="h-24 bg-card">
         <div className='flex justify-between items-center px-5
              sm:px-7 md:px-10 xl:px-12 pt-5'>
             <div id='1'>

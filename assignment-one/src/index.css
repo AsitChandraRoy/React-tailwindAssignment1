@@ -8,5 +8,9 @@
 .active{
     font-weight: 700;
     color: black !important;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
 }
+
+/* .white:hover{
+
+} */

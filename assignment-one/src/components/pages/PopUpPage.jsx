@@ -4,7 +4,7 @@ import { Button } from "../common/button";
 export default function PopUpPage({toggler}) {
   return (
     <>
-      <div className="flex flex-row-reverse">
+      <div className="flex flex-row-reverse relative z-50">
         <div className="bg-[#f4f4f5] rounded-xl h-[448px] w-[331px] -mt-[630px] mr-10 drop-shadow-2xl">
           <h1 className="bg-[#f26922] rounded-t-xl p-3 font-bold text-[18px] leading-5 text-white">
             Chat with Cypher
@@ -46,7 +46,7 @@ export default function PopUpPage({toggler}) {
       {/* Close Button */}
       <div className="flex flex-row-reverse">
         <button
-          className="text-black text-5xl -mt-[173.4px] mr-[79px] bg-white h-20 w-20 drop-shadow-2xl transition-shadow font-extralight rounded-full"
+          className="text-black text-5xl -mt-[174px] mr-[78px] bg-white h-20 w-20 drop-shadow-2xl transition-shadow font-extralight rounded-full"
           onClick={toggler}
           aria-label="Close button"
           >

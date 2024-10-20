@@ -118,7 +118,7 @@ export const bestIncident = [
         des: "Lightning",
     },
     {
-        img: "/hand.png",
+        img: "/hand2.png",
         des: "Man Made",
     },
     {
