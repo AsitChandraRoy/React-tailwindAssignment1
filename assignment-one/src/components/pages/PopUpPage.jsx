@@ -37,7 +37,7 @@ export default function PopUpPage({toggler}) {
             <div className="flex justify-center items-center space-x-1">
               <img src="/camera.png" alt="" />
               <img src="/gallery.png" alt="" />
-              <img src="alpine.png" alt="" />
+              <img src="/alpine.png" alt="" />
             </div>
             <Button className="rounded-2xl">send</Button>
           </div>
