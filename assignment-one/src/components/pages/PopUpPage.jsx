@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../common/button";
 
-export default function PopUpPage({toggler}) {
+export default function PopUpPage({ toggler }) {
   return (
     <>
       <div className="flex flex-row-reverse relative z-50">
@@ -49,10 +49,9 @@ export default function PopUpPage({toggler}) {
           className="text-black text-5xl -mt-[174px] mr-[78px] bg-white h-20 w-20 drop-shadow-2xl transition-shadow font-extralight rounded-full"
           onClick={toggler}
           aria-label="Close button"
-          >
+        >
           &times;
         </button>
-
       </div>
     </>
   );

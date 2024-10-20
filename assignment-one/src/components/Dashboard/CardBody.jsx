@@ -3,7 +3,6 @@ import { Container } from "../common/container";
 import { cardDetails } from "../../lib/db";
 
 function CardBody() {
-
   return (
     <>
       <Container className="lg:mt-1 md:mt- sm:mt-32 mt-24 bg-white h-full">

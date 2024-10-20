@@ -14,7 +14,7 @@ export default function CButton() {
           c
         </button>
       </div>
-      {isOpen && <PopUpPage toggler={toggler}/>}
+      {isOpen && <PopUpPage toggler={toggler} />}
     </>
   );
 }
