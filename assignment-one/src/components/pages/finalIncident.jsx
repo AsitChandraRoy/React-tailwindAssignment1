@@ -16,14 +16,14 @@ export default function FinalIncident({ goBack, onClose }) {
         <ShowCButton />
       ) : (
         <div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
-          <button type="button" onClick={goBack}>
+          <div onClick={goBack}>
             <Button className="bg-[#ffffff] text-black opacity-70 border">
               Back
             </Button>
-          </button>
-          <button type="button" onClick={create}>
+          </div>
+          <div onClick={create}>
             <Button>Finished</Button>
-          </button>
+          </div>
         </div>
       )}
 

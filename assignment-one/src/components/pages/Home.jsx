@@ -17,7 +17,7 @@ function Home() {
           <div className="grid grid-cols-12 end-0 items-end text-xs gap-3 text-lowLight">
             <div className="col-span-12 sm:col-span-6 flex justify-start ps-2 pe-5 py-[5px] gap-1 rounded-sm bg-[#ffffff]">
               <img className="" src="/search.png" alt="" />
-              <input type="text" placeholder="Search incident" />
+              <input className="border-none" type="text" placeholder="Search incident" />
             </div>
             <p className="col-span-12 sm:col-span-3 bg-[#ffffff] p-1.5 rounded-sm">
               Sort By: Date modified

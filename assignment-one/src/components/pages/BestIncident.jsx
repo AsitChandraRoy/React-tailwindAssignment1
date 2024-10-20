@@ -21,14 +21,14 @@ export default function BestIncident({ Backing, onClose }) {
             <IncidentInput Back={create} onClose={handleClose} />
           ) : (
             <div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
-              <button type="button" onClick={Backing}>
+              <div  onClick={Backing}>
                 <Button className="bg-[#ffffff] text-black opacity-70 border">
                   Back
                 </Button>
-              </button>
-              <button type="button" onClick={create}>
+              </div>
+              <div onClick={create}>
                 <Button>Next step</Button>
-              </button>
+              </div>
             </div>
           )}
 

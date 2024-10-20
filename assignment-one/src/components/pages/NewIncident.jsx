@@ -79,9 +79,9 @@ export default function NewIncident() {
               </div>
 
               <div className="flex justify-center items-center mb-32 ">
-                <button onClick={best}>
+                <div onClick={best}>
                   <Button className="rounded-[6px] ">Get started</Button>
-                </button>
+                </div>
               </div>
             </Container>
           )}
