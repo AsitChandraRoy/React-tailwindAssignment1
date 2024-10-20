@@ -3,15 +3,22 @@ import IncidentHero from "../common/IncidentHero";
 import { Container } from "../common/container";
 import { Button } from "../common/button";
 import FinalIncident from "./finalIncident";
+import Incidents from "./incidents";
 
-export default function IncidentInput({ Back }) {
+export default function IncidentInput({ Back, onClose }) {
   const [isCreate, setIsCreate] = useState(false);
   const create = () => setIsCreate(!isCreate);
+
+  const [show, setShow] = useState(true);
+  const handleClose = () => setShow(!show);
+
   return (
     <>
-        {!isCreate && <IncidentHero />}
+      {show && (
+        <Container>
+        {!isCreate && <IncidentHero onClose={onClose} />}
 
-        {isCreate ? < FinalIncident goBack={create} /> : (<div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
+        {isCreate ? < FinalIncident goBack={create} onClose={handleClose} /> : (<div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
           <button type="button" onClick={Back}>
             <Button className="bg-[#ffffff] text-black opacity-70 border">
               Back
@@ -39,7 +46,6 @@ export default function IncidentInput({ Back }) {
             <p className="text-lowLight text-sm pb-3">
               Share some information about the incident. The when, where, how.
             </p>
-            {/* <input className='bg-card w-[752px] h-[127px] rounded-md  ' type="text" placeholder='Type here' /> */}
             <textarea
               className="bg-card w-[752px] h-[127px] p-3 rounded-md text-xs "
               name="input"
@@ -48,6 +54,10 @@ export default function IncidentInput({ Back }) {
           </div>
         </div>
       </Container> }
+      </Container>
+
+    )}
+    {!show && <Incidents />}
 
 
     </>

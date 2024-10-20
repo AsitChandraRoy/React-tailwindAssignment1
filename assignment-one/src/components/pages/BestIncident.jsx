@@ -4,14 +4,20 @@ import { Container } from "../common/container";
 import { bestIncident } from "../../lib/db";
 import { Button } from "../common/button";
 import IncidentInput from "./IncidentInput";
+import Incidents from "./incidents";
 
 export default function BestIncident({ Backing, onClose }) {
     const [isCreate, setIsCreate] = useState(false);
     const create = () => setIsCreate(!isCreate);
+
+    const [show, setShow] = useState(true);
+    const handleClose = () => setShow(!show);
   return (
     <>
+      {show && (
+        <Container>
         {!isCreate && <IncidentHero onClose={onClose} />}
-        {isCreate ? < IncidentInput Back={create} /> : (            <div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
+        {isCreate ? < IncidentInput Back={create}  onClose={handleClose} /> : ( <div className="flex justify-end -mt-[70px] mr-12 items-center space-x-1 sm:space-x-3">
           <button type="button" onClick={Backing}>
             <Button className="bg-[#ffffff] text-black opacity-70 border">
               Back
@@ -44,6 +50,10 @@ export default function BestIncident({ Backing, onClose }) {
                 </div>
             </div>
         </Container>}
+        </Container>
+
+      )}
+      {!show && <Incidents />}
     </>
   );
 }

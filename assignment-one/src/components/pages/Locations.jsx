@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../common/hero'
-import CardBody from '../Dashboard/CardBody'
 import NewLocation from './Newlocation'
 
 function Locations() {

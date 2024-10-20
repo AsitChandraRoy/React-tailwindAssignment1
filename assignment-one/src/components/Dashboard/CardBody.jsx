@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "../common/container";
 import { cardDetails } from "../../lib/db";
 

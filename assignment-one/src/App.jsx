@@ -7,16 +7,7 @@ import Locations from './components/pages/Locations'
 import Activities from './components/pages/Activities'
 import Documents from './components/pages/Documents'
 import CypherAI from './components/pages/CypherAI'
-import Home from './components/pages/Home'
-import CardBody from './components/Dashboard/CardBody'
-import PopUpPage from './components/pages/PopUpPage'
-import CButton from './components/Dashboard/CButton'
 import ShowCButton from './components/Dashboard/ShowCButton'
-import NewIncident from './components/pages/NewIncident'
-import BestIncident from './components/pages/BestIncident'
-import IncidentInput from './components/pages/IncidentInput'
-import FinalIncident from './components/pages/finalIncident'
-import NewLocation from './components/pages/Newlocation'
 
 function App() {
 
@@ -34,14 +25,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <CardBody /> */}
-      {/* <CButton /> */}
-      {/* <PopUpPage /> */}
-      {/* <NewIncident /> */}
-      {/* <BestIncident /> */}
-      {/* <IncidentInput /> */}
-      {/* <FinalIncident /> */}
-      {/* <NewLocation /> */}
     </main>
   )
 }

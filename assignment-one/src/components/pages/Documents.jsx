@@ -5,8 +5,8 @@ import CardBody from '../Dashboard/CardBody'
 function Documents() {
   return (
     <>
-          <Hero direction="Home - Documents" itemName="Documents" sort="Sort By: Date modified" plus="+" btnText="New Document" />
-          <CardBody />
+        <Hero direction="Home - Documents" itemName="Documents" sort="Sort By: Date modified" plus="+" btnText="New Document" />
+        <CardBody />
     </>
   )
 }

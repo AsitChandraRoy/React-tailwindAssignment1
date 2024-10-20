@@ -4,16 +4,14 @@ import { Container } from "../common/container";
 import { Button } from "../common/button";
 import ShowCButton from "../Dashboard/ShowCButton";
 
-export default function FinalIncident({ goBack }) {
+export default function FinalIncident({ goBack, onClose }) {
+  
   const [isCreate, setIsCreate] = useState(false);
   const create = () => setIsCreate(!isCreate);
-  const [isBack, setIsBack] = useState(false);
-  const back = () => setIsBack(!isBack);
+
   return (
     <>
-      {!isCreate && <IncidentHero />}
-      {/* {isCreate && <Home />} */}
-      {/* {isCreate && <ShowCButton />} */}
+      {!isCreate && <IncidentHero onClose={onClose} />}
 
       {isCreate ? (
         <ShowCButton />
@@ -30,7 +28,7 @@ export default function FinalIncident({ goBack }) {
         </div>
       )}
 
-      {!isCreate &&       <Container className="flex flex-col w-[752px] h-auto ps-1 sm:ps-0 mt-12 ">
+      {!isCreate && <Container className="flex flex-col w-[752px] h-auto ps-1 sm:ps-0 mt-12 ">
         <div>
           <h1 className="font-bold text-2xl pb-1 pt-7 ">
             Where’s the incident?

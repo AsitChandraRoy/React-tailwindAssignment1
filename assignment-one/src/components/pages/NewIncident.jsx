@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Container } from "../common/container";
 import { Button } from "../common/button";
 import BestIncident from "./BestIncident";
+import Incidents from "./incidents";
 
 export default function NewIncident() {
   const [start, setStart] = useState(false)
   const best = () => setStart(!start);
 
   const [show, setShow] = useState(true);
-  const handleClose = () => setShow(false);
+  const handleClose = () => setShow(!show);
 
   return (
     <>
@@ -83,7 +84,7 @@ export default function NewIncident() {
       </Container>) }
       </Container>
       )}
-
+      {!show && <Incidents />}
     </>
   );
 }
