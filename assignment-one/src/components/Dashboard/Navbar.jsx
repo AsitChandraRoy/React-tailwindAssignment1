@@ -19,7 +19,7 @@ function Navbar() {
     <>
       <section className="bg-card">
         <Container>
-          <nav className="flex justify-between items-center pb-3 px-5 sm:px-7 md:px-10 xl:px-12 border-b-2 border-[#cbcbd9]">
+          <nav className="flex justify-between items-center px-5 sm:px-7 md:px-10 xl:px-12 border-b-2 border-[#cbcbd9]">
             <img
               className="h-5 md:h-7 xl:h-9"
               src="/logo.png"
@@ -28,15 +28,8 @@ function Navbar() {
             <div>
               <ul className="hidden md:flex justify-center items-center gap-2 md:gap-4 lg:gap-7 xl:gap-8 text-xs md:text-sm xl:text-base">
                 {navItems.map(({ text, link }, i) => (
-                  <li key={i}>
-                    <NavLink
-                      to={link}
-                      className={({ isActive }) =>
-                        isActive ? "text-black" : "text-lowLight"
-                      }
-                    >
-                      {text}
-                    </NavLink>
+                  <li key={i} className="py-5">
+                    <NavLink to={link}>{text}</NavLink>
                   </li>
                 ))}
               </ul>

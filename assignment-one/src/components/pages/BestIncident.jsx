@@ -45,10 +45,10 @@ export default function BestIncident({ Backing, onClose }) {
                   {bestIncident.map(({ img, des }, i) => (
                     <div
                       key={i}
-                      className="col-span-6 sm:col-span-3 flex items-center ps-4 gap-3 bg-card w-[166px] sm:w-[180px] h-[69px] border rounded-md hover:bg-warning hover:text-white  hover:cursor-pointer hover:scale-105 transition-all duration-300 "
+                      className="col-span-6 sm:col-span-3 flex items-center ps-4 gap-3 bg-card w-[166px] sm:w-[180px] h-[69px] border rounded-md hover:bg-[#0d96dd] hover:text-black hover:cursor-pointer hover:scale-105 transition-colors duration-300 hover:invert hover:font-bold"
                     >
-                      <p className="white ">
-                        <img src={img} alt="" />
+                      <p className="white">
+                        <img className="transition-filter duration-300 filter brightness-0" src={img} alt="" />
                       </p>
                       <p className="text-sm">{des}</p>
                     </div>
